@@ -20,19 +20,19 @@ public interface SelfOrganizingListMap<Key, Value> {
 
 
     /**
-     * Return value corresponding to the key. If key is not present
-     * throw NoSuchElementException. (also list is reorganized)
+     * Return value corresponding to the key and reorganize list.
      * @param key
      * @return value corresponding to key
+     * @throws NoSuchElementException if key is not present
      */
-    Value get(Key key) throws NoSuchElementException;
+    Value get(Key key);
 
 
     /**
      * Removes value key-value pair from the map.
-     * If key is not present throws NoSuchElementException.
      * @param key
      * @return Removed value.
+     * @throws NoSuchElementException if key is not present
      */
     Value remove(Key key);
 

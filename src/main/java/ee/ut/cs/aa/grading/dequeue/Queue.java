@@ -27,7 +27,7 @@ public interface Queue<T> {
      * @return the removed item
      * @throws NoSuchElementException if queue is empty
      */
-    T remove() throws NoSuchElementException;
+    T remove();
 
     /**
      * Return an item from the queue that was added before all the other items currently
@@ -36,6 +36,6 @@ public interface Queue<T> {
      * @return "oldest" item
      * @throws NoSuchElementException if queue is empty
      */
-    T peek() throws NoSuchElementException;
+    T peek();
 
 }

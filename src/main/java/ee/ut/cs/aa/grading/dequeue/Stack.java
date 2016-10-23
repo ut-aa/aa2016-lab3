@@ -28,7 +28,7 @@ public interface Stack<T> {
      * @return the removed item
      * @throws NoSuchElementException if stack is empty
      */
-    T pop() throws NoSuchElementException;
+    T pop();
 
     /**
      * Return an item from the stack that was added after all the other items present in the stack.
@@ -36,6 +36,6 @@ public interface Stack<T> {
      * @return "youngest" item
      * @throws NoSuchElementException if stack is empty
      */
-    T peek() throws NoSuchElementException;
+    T peek();
 
 }

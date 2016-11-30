@@ -34,7 +34,7 @@ public interface SelfOrganizingListMap<Key, Value> {
      * @return Removed value.
      * @throws NoSuchElementException if key is not present
      */
-    Value remove(Key key);
+    Value remove(Key key) throws NoSuchElementException;
 
 
     /**
